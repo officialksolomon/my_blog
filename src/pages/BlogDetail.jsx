@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import Blog from './Blog'
 import { OtherPosts } from './OtherPosts'
-import images from '../assets/images/images'
+import images from '/public/images/images.jsx'
 import { Comments } from '../components/Comments'
 
 

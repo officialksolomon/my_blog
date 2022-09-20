@@ -5,7 +5,9 @@ import BlogList from '../components/BlogList'
 import useFetch from '../hooks/useFetch'
 import { FaSadTear, FaSmile } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
-import images from '../assets/images/images'
+import images from '/public/images/images.jsx'
+import images from '../compon'
+
 
 export default function Blog () {
   const [posts, loading, error] = useFetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
