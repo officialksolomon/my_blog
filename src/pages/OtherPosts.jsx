@@ -19,7 +19,7 @@ export function OtherPosts ({ currentPostId }) {
             <Col xs={12} className='border-bottom border-right pb-3 clickable'
               onClick={() => navigate(`/blog-detail/${post.id}/`)} key={post.id}>
               <div className='bg-light shadow-sm p-3'>
-                <img className='w-100 pb-2  rounded-3' height={200} src={`/src/assets/images/${images[index]}`} alt="post image" />
+                <img className='w-100 pb-2  rounded-3' height={200} src={images[index]} alt="post image" />
                 <h6 className='text-truncate'>{post.title}</h6>
                 <hr className='m-0 p-0' />
               </div>

@@ -3,6 +3,7 @@ import { Col, Container, Row, Button } from "react-bootstrap"
 import { Link, useNavigate } from 'react-router-dom'
 import { MdNavigateNext } from "react-icons/md"
 import './Home.css'
+import bookImg from '../images/book.jpg'
 
 
 
@@ -13,7 +14,7 @@ export default function Home () {
       <Container>
         <Row className="h-100 py-5 p-lg-5">
           <Col xs={12} md={8} className="p-lg-5">
-            <h1 className='text-primary mb-1 p-0 fs-3'>Satisfy your</h1> 
+            <h1 className='text-primary mb-1 p-0 fs-3'>Satisfy your</h1>
             <h1 className='h1-curiosity text-white m-0 p-0 d-inline-block fw-bolder bg-primary  p-2 px-3' >
               CURIOSITY...
               {/* <span className='curiosity fw-bolder bg-primary  p-2 px-3 border border-danger'>CURIOSITY...</span> */}
