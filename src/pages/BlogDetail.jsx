@@ -4,8 +4,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import Blog from './Blog'
 import { OtherPosts } from './OtherPosts'
-import images from '/public/images/images.jsx'
 import { Comments } from '../components/Comments'
+import images from '../images/images'
 
 
 export default function BlogDetail () {
@@ -18,7 +18,7 @@ export default function BlogDetail () {
         <Col xs={12} lg={8} className=" p-3 animate__animated animate__fadeIn vh-100 overflow-scroll">
           <h1 className=''>{post && post.title}</h1>
           <span className='text-black-50 d-block'>Published at 19 September, 2022.</span>
-          <img src={`/public/images/${images[postId - 1]}`} alt="post image" height={400} className="w-100 mt-3" />
+          <img src={`/src/images/${images[postId - 1]}`} alt="post image" height={400} className="w-100 mt-3" />
           <p className='mt-4'>{post && post.body}</p>
           <hr className='text-black-50 w-100' />
           <Comments postId={postId} />

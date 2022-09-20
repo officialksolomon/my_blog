@@ -2,7 +2,8 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
-import images from '../assets/images/images'
+import images from '../images/images'
+
 
 export function OtherPosts ({ currentPostId }) {
   const [otherPosts, loading, error] = useFetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
@@ -11,7 +12,7 @@ export function OtherPosts ({ currentPostId }) {
   const list = []
   if (otherPosts) {
     otherPosts.forEach((post, index) => {
-     
+
       if (index < 6 && post.id !== Number(currentPostId)) {
         list.push(
           <>

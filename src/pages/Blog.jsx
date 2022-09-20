@@ -5,8 +5,8 @@ import BlogList from '../components/BlogList'
 import useFetch from '../hooks/useFetch'
 import { FaSadTear, FaSmile } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
-import images from '/public/images/images.jsx'
-import images from '../compon'
+import images from '../images/images'
+
 
 
 export default function Blog () {
