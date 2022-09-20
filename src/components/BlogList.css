@@ -1,0 +1,9 @@
+img{
+  object-fit: cover;
+}
+.comment-label{
+    font-size: 0.7rem ;
+}
+.footer-btn-name{
+  font-size: 0.7rem !important;
+}

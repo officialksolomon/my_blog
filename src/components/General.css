@@ -1,0 +1,14 @@
+*{
+  overflow-x: hidden;
+}
+
+.clickable:hover{
+  cursor:pointer;
+  
+}
+
+@media screen and (max-width: 680px) {
+ p{
+ /* font-size:  0.5rem; */
+ }
+}
