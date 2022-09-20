@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Button, Container, Row, Col } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
-import './BlogList.css'
-import BlogListFooter from './BlogListFooter'
+import './blog_item.css'
+import BlogListFooter from './BlogItemFooter'
 
 export default function BlogList ({ post, img }) {
   const [comments, loading, error] = useFetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)

@@ -11,7 +11,6 @@ import images from '../images/images'
 export default function BlogDetail () {
   const { postId } = useParams()
   const [post, loading, error] = useFetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-
   return (
     <Container className=''>
       <Row className=''>

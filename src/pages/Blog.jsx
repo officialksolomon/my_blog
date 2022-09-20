@@ -1,7 +1,7 @@
 import { Button, Container, Row, Col } from 'react-bootstrap'
 import { useState, useEffect } from "react"
 import React from 'react'
-import BlogList from '../components/BlogList'
+import BlogList from '../components/BlogItem'
 import useFetch from '../hooks/useFetch'
 import { FaSadTear, FaSmile } from 'react-icons/fa'
 import { IconContext } from 'react-icons'
@@ -11,7 +11,6 @@ import images from '../images/images'
 
 export default function Blog () {
   const [posts, loading, error] = useFetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-
   let blogList
   if (posts) {
     blogList = posts.map((post, index) => {
