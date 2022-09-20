@@ -1,11 +1,12 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
+import dpImg from '../images/dp.png'
 
 function CommentItem ({ comment }) {
   return (
     <Row className="bg-light shadow-sm m-2  py-3 rounded-3">
       <Col xs={2} className=''>
-        <img src="/src/assets/images/dp.png" className='img-fluid img-thumbnail rounded-circle' alt="dp" />
+        <img src={dpImg} className='img-fluid img-thumbnail rounded-circle' alt="dp" />
       </Col>
       <Col xs={10} className=''>
         <p>{comment.body}</p>
