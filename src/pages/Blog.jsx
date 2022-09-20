@@ -10,7 +10,7 @@ import images from '../images/images'
 
 
 export default function Blog () {
-  const [posts, loading, error] = useFetch('https://jsonplaceholder.typicode.com/post?_limit=10')
+  const [posts, loading, error] = useFetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
   let blogList
   if (posts) {
     blogList = posts.map((post, index) => {
