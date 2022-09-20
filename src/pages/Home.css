@@ -1,7 +1,7 @@
 
 
 .home-container {
-  background-image: url('/src/assets/images/book.jpg');
+  background-image: url('/public/images/book.jpg');
   background-repeat:no-repeat;
   background-size:cover;
   height: 100vh;
